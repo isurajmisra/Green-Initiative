@@ -1,118 +1,113 @@
-.main-header {
-    display: flex;
-    height: 7rem;
-    justify-content: space-evenly;
-    align-items: center;
-    align-items: stretch;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.title {
-    text-align: left;
-    font: Bold 1.3rem/1.5rem Helvetica;
-    letter-spacing: 0;
-    color: #354463;
-    opacity: 1;
-    height: 4rem;
-    align-items: center;
-    padding-right: 10rem;
-    padding-top: 1rem;
-}
-
-.links {
-    display: flex;
-}
-
-.about-us,
-.our-stories,
-.news {
-    font: Light 1rem/1.5rem Helvetica;
-    letter-spacing: -0.01rem;
-    color: #354463;
-    opacity: 1;
-    height: 1rem;
-    padding-right: 3rem;
-    padding-top: .7rem;
-    padding-left: 0rem;
-}
-
-.donate-wrapper {
-    display: flex;
-    height: 3.5rem;
-    padding-top: 2rem;
-}
-
-.donate {
-    text-align: center;
-    font: Bold 1.2rem/1.375rem Helvetica;
-    letter-spacing: 0;
-    color: #354463;
-    opacity: 1;
-    background-color: #C1F7D5;
-    border-radius: 2rem;
-    padding-top: 1rem;
-    width: 11rem;
-}
-
-.banner {
-    display: flex;
-    justify-content: stretch;
-    width: 100%;
-}
-
-@media (max-width:1000px) {
-    .navbar {
-        flex-direction: column;
-    }
     .main-header {
-        height: 8rem;
-        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        height: 7rem;
+        justify-content: space-evenly;
     }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        width: 65%;
+        justify-content: space-between;
+    }
+    
+    .title {
+        font: Bold 1.3rem/1.5rem Helvetica;
+        color: #354463;
+        opacity: 1;
+        width: 40%;
+    }
+    
     .links {
-        padding-left: 6rem;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 1;
+        width: 80%;
     }
+    
+    .about-us,
+    .our-stories,
+    .news {
+        font: Light 1rem/1.5rem Helvetica;
+        letter-spacing: -0.01rem;
+        color: #354463;
+        opacity: 1;
+        width: 8rem;
+    }
+    
     .donate-wrapper {
-        padding-right: 2rem;
+        display: flex;
     }
-    .title {
-        padding-left: 0rem;
-    }
-}
-
-@media (max-width:750px) {
-    .main-header {
-        flex-direction: column;
-        height: 12rem;
-    }
-    .links {
-        flex-direction: column;
-        padding-left: 0rem;
-        padding-top: 1rem;
-    }
-    .navbar {
-        flex-direction: row;
-        padding-bottom: 1rem;
-    }
-    .title {
-        padding-left: 3rem;
-        height: 2rem;
-        padding-right: 2rem;
-    }
+    
     .donate {
-        flex-grow: 1;
+        text-align: center;
+        font: Bold 1.2rem/1.375rem Helvetica;
+        color: #354463;
+        opacity: 1;
+        background-color: #C1F7D5;
+        border-radius: 2rem;
+        padding: 1rem;
+        width: 100%;
+        border-block-color: #C1F7D5;
     }
-    .donate-wrapper {
-        padding-left: 3rem;
-        padding-right: 3rem;
+    
+    .banner {
+        display: flex;
+        width: 100%;
     }
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
+    
+    @media (max-width:900px) {
+        .main-header {
+            height: 8rem;
+        }
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 55%;
+        }
+        .links {
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .title {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width:630px) {
+        .main-header {
+            flex-direction: column;
+            height: 12rem;
+        }
+        .links {
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0rem;
+            align-content: space-between;
+        }
+        .navbar {
+            flex-direction: row;
+            width: 80%;
+            align-items: center;
+        }
+        .title {
+            width: 80%;
+        }
+        .about-us,
+        .our-stories,
+        .news {
+            padding-top: .5rem;
+        }
+        .donate-wrapper {
+            width: 80%;
+        }
+        .donate {
+            width: 100%;
+        }
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
