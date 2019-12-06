@@ -1,0 +1,156 @@
+.second-page {
+    margin: 0px;
+    padding: 5rem 8%;
+    background: #354463 0% 0% no-repeat padding-box;
+    opacity: 1
+}
+
+.mission-wrapper {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.what-we-do {
+    width: 10rem;
+    text-align: center;
+    font: Regular 1rem/1.3rem Helvetica;
+    letter-spacing: 0.56px;
+    color: #354463;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.mission-text {
+    text-align: left;
+    font: Bold 3.6rem/3.3rem Helvetica;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 8rem;
+}
+
+.mission-plan {
+    display: grid;
+    grid-gap: 5rem;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.plan {
+    display: grid;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    flex-direction: column;
+}
+
+.plan-image {
+    position: relative;
+    left: 10%;
+    width: 100%;
+    bottom: 3rem;
+    right: 5%;
+}
+
+.plan-text {
+    text-align: left;
+    font: Light 1.8rem/2rem Helvetica;
+    letter-spacing: -0.16px;
+    color: #354463;
+    opacity: 1;
+    /* padding-left: 2rem; */
+    padding-left: 10%;
+    padding-right: 1rem;
+}
+
+.plan-text>h2 {
+    text-align: left;
+    font: Bold 1.7rem/2rem Helvetica;
+    letter-spacing: 0;
+    color: #354463;
+    opacity: 1;
+    padding-right: 3rem;
+}
+
+.read-more>button {
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font: Bold 1.2rem/1.5rem Helvetica;
+    letter-spacing: 0;
+    color: #354463;
+    opacity: 1;
+    border: #C1F7D5;
+    margin-top: 2rem;
+    height: 5vh;
+    margin-bottom: 2rem;
+    width: 60%;
+    margin-left: 10%;
+}
+
+
+/* @media (max-width:1300px) {
+    .mission-plan {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
+@media (max-width:980px) {
+    .mission-text {
+        font: Bold 3rem/3.2rem Helvetica;
+    }
+    .mission-plan {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .plan {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+    .plan-text {
+        padding-right: 1em;
+    }
+    .plan-text>h2 {
+        text-align: left;
+        font: Bold 1.5rem/1.7rem Helvetica;
+        letter-spacing: 0;
+        color: #354463;
+        opacity: 1;
+        padding-right: 3rem;
+    }
+    .read-more {
+        position: relative;
+        bottom: 3rem;
+        min-width: 100%;
+        left: 40%;
+    }
+}
+
+@media (max-width:670px) {
+    .mission-text {
+        font: Bold 2.5rem/2.8rem Helvetica;
+    }
+    .plan {
+        grid-template-columns: 1fr;
+        grid-column-gap: 1em;
+    }
+    .plan-image {
+        position: relative;
+        left: 10%;
+        width: 80%;
+        bottom: 3rem;
+    }
+    .plan-text {
+        text-align: center;
+        width: 80%;
+    }
+    .read-more {
+        top: 5%;
+        left: 10%;
+    }
+}
