@@ -37,11 +37,6 @@ body {
     letter-spacing: -0.01rem;
     color: #354463;
     opacity: 1;
-    /* width: 50%; */
-}
-
-.donate-wrapper {
-    /* display: flex; */
 }
 
 .donate-today {
@@ -71,6 +66,7 @@ body {
     display: flex;
     align-items: center;
     width: 84%;
+    /* height: fit-content; */
     justify-content: space-between;
 }
 
@@ -79,12 +75,13 @@ body {
     background: #FFFFFF;
     opacity: 1;
     width: 35%;
+    height: fit-content;
     flex-direction: column;
     padding: 0rem 2rem;
     padding-bottom: 2rem;
 }
 
-.the-issue {
+.small-rel-box:first-child {
     text-align: center;
     font: Regular 1rem/1.3rem Helvetica;
     padding: .8rem;
@@ -96,7 +93,7 @@ body {
     bottom: 1rem;
 }
 
-.climate-content>h2 {
+.climate-content>p {
     width: 100%;
     text-align: left;
     font: Bold 2.5rem/2.7rem Helvetica;
@@ -120,7 +117,8 @@ body {
 .climate-change-img {
     background-image: url(images/stopclimatechange.png);
     width: 35%;
-    height: 20vh;
+    height: 30vh;
+    /* height: auto; */
     align-self: flex-start;
     margin-right: 5rem;
     background-size: contain;
@@ -137,19 +135,8 @@ body {
     align-items: center;
 }
 
-.take-action {
-    text-align: center;
-    font: Regular 1rem/1.4rem Helvetica;
-    letter-spacing: 0.56px;
-    color: #FFFFFF;
-    opacity: 1;
-    position: relative;
-    background-color: #354463;
-    padding: 1rem;
-    width: 20%;
-    height: 1rem;
+.small-rel-box:last-child {
     align-self: center;
-    bottom: 2rem;
 }
 
 .action-wrapper {
@@ -218,9 +205,9 @@ body {
         align-self: flex-start;
     }
     .climate-change-img {
-        margin-bottom: 2%;
+        margin-bottom: 2rem;
     }
-    .climate-content>h2 {
+    .climate-content>p {
         font: Bold 2.2rem/2.4rem Helvetica;
     }
     .action {
@@ -264,19 +251,31 @@ body {
         width: 100%;
     }
     .banner-wrapper {
-        height: 80vh;
+        height: 90vh;
+    }
+    .banner-parent {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .climate-change-img {
+        width: 100%;
+        background-size: auto;
+        margin-bottom: 2rem;
     }
     .climate-box {
-        height: 60%;
+        height: 45%;
         width: 80%;
         align-self: flex-start;
         margin-bottom: 4rem;
     }
-    .climate-content>h2 {
+    .climate-content>p {
         font: Bold 1.7rem/2rem Helvetica;
+        text-align: center;
     }
     .read-more-link>a {
         font: 1.2rem/1.3rem Helvetica;
+        text-align: center;
+        display: flex;
     }
     .banner-parent {
         justify-content: space-evenly;
@@ -294,7 +293,7 @@ body {
     .action>h2 {
         font: Bold 1.5rem/2.5rem Helvetica;
     }
-    .take-action {
-        width: 40%;
+    .small-rel-box:first-child {
+        align-self: center;
     }
 }
