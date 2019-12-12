@@ -85,7 +85,7 @@ body {
     text-align: center;
     font: Regular 1rem/1.3rem Helvetica;
     padding: .8rem;
-    width: fit-content;
+    width: 10rem;
     height: fit-content;
     background: #354463;
     color: #FFFFFF;
@@ -218,7 +218,7 @@ body {
     }
 }
 
-@media (max-width:550px) {
+@media (max-width:580px) {
     .main-header {
         flex-direction: column;
         height: 12rem;
